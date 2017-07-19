@@ -1,17 +1,13 @@
 /**
   * Created by Administrator on 19/07/2017.
   */
-import org.scalautils.TypeCheckedTripleEquals._
+import scala.io.StdIn._
 
 object Main {
 
   val dict: List[Char] = "abcdefghijklmnopqrstuvwxyz".toList
 
-  def main(args: Array[String]): Unit = ???
-
-  def getInput(): String = ???
-
-  def errHandler(): String = ???
+  def main(args: Array[String]): Unit = println("Encoded string: " + encode(readLine("Input Text: ")))
 
   def encode(text: String): String = {
     text.toList.map {
