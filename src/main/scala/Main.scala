@@ -13,7 +13,7 @@ object Main {
     text.toList.map {
       case(char) =>
         if (dict.contains(char.toLower)){
-          val swapIndex = (dict.length - 1) - dict.indexOf(char)
+          val swapIndex = (dict.length - 1) - dict.indexOf(char.toLower)
           dict(swapIndex)
         }else{
           char
